@@ -1,0 +1,8 @@
+---
+- hosts:localhost
+  tasks:
+  - name: termminating EC2 instance
+    ec2:
+      state: absent
+      instance_ids: i-01aa9058bb8079541
+      region: us-east-1
